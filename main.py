@@ -11,11 +11,11 @@ def dog_run():
         if friend == "first":
             time_to_meet = distance / (firstFriendSpeed + dogSpeed)
             distance -= time_to_meet * (secondFriendSpeed + firstFriendSpeed)
-            friend = "first"
+            friend = "second"
         else:
             time_to_meet = distance / (secondFriendSpeed + dogSpeed)
             distance -= time_to_meet * (firstFriendSpeed + secondFriendSpeed)
-            friend = "second"
+            friend = "first"
         count += 1
 
     return count
